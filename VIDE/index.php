@@ -1,3 +1,7 @@
+<?php
+    require_once "_inc/Globals.class.php";
+    $globals = new Globals;
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -23,7 +27,8 @@
         <!-- Redirection vers la même page -->
         <div id="formulaire">
             <h3>Formulaire de test</h3>
-            <form action="<?= filter_var(filter_input(INPUT_ENV, $_SERVER['PHP_SELF']), FILTER_SANITIZE_SPECIAL_CHARS)  ?>" method="post">
+            <!-- <form action="<?= filter_var(filter_input(INPUT_ENV, $_SERVER['PHP_SELF']), FILTER_SANITIZE_SPECIAL_CHARS) ?>" method="post"> -->
+            <form action="<?= filter_var($globals->getENV, FILTER_SANITIZE_SPECIAL_CHARS) ?>" method="post">
                 <div class="input">
                     <input type="text" name="nom" id="nom">
                 </div>
