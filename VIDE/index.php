@@ -23,7 +23,7 @@
         <!-- Redirection vers la même page -->
         <div id="formulaire">
             <h3>Formulaire de test</h3>
-            <form action="<?= filter_has_var(INPUT_ENV, filter_input(INPUT_ENV, $_SERVER['PHP_SELF']))  ?>" method="post">
+            <form action="<?= filter_var(filter_input(INPUT_ENV, $_SERVER['PHP_SELF']), FILTER_SANITIZE_SPECIAL_CHARS)  ?>" method="post">
                 <div class="input">
                     <input type="text" name="nom" id="nom">
                 </div>
