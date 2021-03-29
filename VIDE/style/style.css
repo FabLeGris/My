@@ -5,28 +5,12 @@
 
 h1 { margin-left: 10px; }
 
-section {
-    margin-top : 10px;
-    margin-left : 10px;
-}
-
-article {
-    width : 50vw;
-}
-
-p {
-    margin-left : 10px;
-    margin-bottom : 15px;
-}
-
-.input {
-    margin : 10px 10px 0px 10px;
-}
-
-.input input {
-    padding : 5px;
-}
-
+section { margin-top: 10px;
+    margin-left: 10px; }
+article { width: 50vw; }
+p { margin-left: 10px;
+    margin-bottom: 15px; }
+.input { margin: 10px 10px 0px 10px; }
+.input input { padding: 5px; }
 .bouton input {
-    padding : 5px 15px;
-}
+    padding: 5px 15px; }
