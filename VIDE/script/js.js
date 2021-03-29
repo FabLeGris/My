@@ -1,0 +1,1 @@
+document.querySelector("#afficherAvecJS").innerHTML = "Bonjour le monde de JavaScript";
