@@ -5,7 +5,7 @@ class Globals
     private $ENV;
     public function __construct()
     {
-        $this->POST = $_POST['nom'];
+        $this->POST = filter_input(INPUT_POST, 'nom');
         $this->ENV = $_SERVER['PHP_SELF'];
     }
 
