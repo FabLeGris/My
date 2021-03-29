@@ -5,7 +5,7 @@ class Globals
     private $ENV;
     public function __construct()
     {
-        $this->POST = $_POST;
+        $this->POST = $_POST['nom'];
         $this->ENV = $_SERVER['PHP_SELF'];
     }
 
