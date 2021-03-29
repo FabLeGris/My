@@ -1,5 +1,5 @@
 <?php
-    require_once "_inc/Globals.class.php";
+    include_once "_inc/Globals.class.php";
     $globals = new Globals;
 ?>
 <!DOCTYPE html>
