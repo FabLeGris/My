@@ -1,3 +1,3 @@
-## Test en cours
+## Learning Web POO
 
-Rien de fantastique mais utile pour apprendre Github
+Projet apprentissage POO
